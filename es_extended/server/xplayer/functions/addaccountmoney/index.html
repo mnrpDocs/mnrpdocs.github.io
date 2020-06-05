@@ -2437,7 +2437,7 @@
                 
                 
                 <h1 id="xplayeraddaccountmoney">xPlayer.addAccountMoney<a class="headerlink" href="#xplayeraddaccountmoney" title="Permanent link">&para;</a></h1>
-<div class="highlight"><pre><span></span><code><span class="n">xPlayer</span><span class="p">.</span><span class="n">addAccountMoney</span><span class="p">(</span><span class="n">account</span><span class="p">,</span> <span class="n">money</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">xPlayer</span><span class="p">.</span><span class="n">addAccountMoney</span><span class="p">(</span><span class="n">account</span><span class="p">,</span> </span><span class="n">money</span><span class="p">,</span> </span><span class="n">from_name</span><span class="p">,</span> </span><span class="n">subject</span><span class="p">)</span>
 </code></pre></div>
 
 <p>This function adds account money.</p>
@@ -2467,12 +2467,23 @@
 <td>-</td>
 <td>Amount of money to add</td>
 </tr>
+<tr>
+  <td>from_name</td>
+  <td>string</td>
+  <td>No</td>
+  <td>Onbekend</td>
+  <td>Where the moeny commes from</td>
+  </tr>
+  <tr>
+    <td>subject</td>
+    <td>string</td>
+    <td>No</td>
+    <td>Gelieve dit te melden bij staff.</td>
+    <td>Why the money is gained</td>
+    </tr>
 </tbody>
 </table>
-<h2 id="xplayeraddaccountmoney-example">xPlayer.addAccountMoney Example<a class="headerlink" href="#xplayeraddaccountmoney-example" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>    <span class="kd">local</span> <span class="n">xPlayer</span> <span class="o">=</span> <span class="n">ESX</span><span class="p">.</span><span class="n">GetPlayerFromId</span><span class="p">(</span><span class="n">playerId</span><span class="p">)</span>
-    <span class="n">xPlayer</span><span class="p">.</span><span class="n">addAccountMoney</span><span class="p">(</span><span class="s1">&#39;bank&#39;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
-</code></pre></div>
+
                 
               
               
